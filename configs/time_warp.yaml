@@ -1,0 +1,28 @@
+checkpointing :
+  checkpoint_path         : './outputs/spatiotemporal/'
+  prefix                  : 'timewarp'
+
+dataset :
+  pca_basis_path          : './data/Example/PCA.mat'
+  sample_path_f1          : './data/Example/00032_shortshort_ATUsquat.mat/model.pth'
+  sample_path_f2          : './data/Example/00127_shortlong_ATUsquat.mat/model.pth'
+  spatial_param_path_f1   : './data/Example/00032_shortshort_ATUsquat.mat/'
+  spatial_param_path_f2   : './data/Example/00127_shortlong_ATUsquat.mat/'
+  sample_path_net         : 'PATH OF TRAINED TIMEWARP'
+  num_workers             : 4
+  num_points              : 80000
+  num_epochs              : 2000
+  sphere_size             : 32
+  lambda_monotonicity     : 100
+
+
+  increase_timestamps     : 10
+  time_samples            : 25
+  max_temporal_batch_size : 50
+
+  visualization_timestamps: 150
+  visualization_resolution: 256
+
+hydra:
+  run:
+    dir: './'

@@ -1,0 +1,18 @@
+checkpointing :
+  checkpoint_path    : './outputs/dsns/'
+  prefix : 'dataset'
+
+dataset :
+  sample_path : 'data/50002_chicken_wings.mat'
+  device: "cuda:0"
+  dict_type: "Mall"
+  res_index: 9
+  sphere_level: 256
+  grid_size: 128
+  num_workers : 8
+  num_points  : 80000   #Change total number of points based on your GPU. This is set based on RTX-4090 (24 GB).
+  num_epochs  : 50000
+
+hydra:
+  run:
+    dir: './'

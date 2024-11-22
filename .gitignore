@@ -1,0 +1,6 @@
+/outputs/
+/_pretrained/
+/data/
+/.hydra/
+/.idea/
+/lightning_logs/
