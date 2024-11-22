@@ -43,11 +43,11 @@ TBA
 ```
 python train_time_warp.py
 ```
-4. 4D Geodesics
+4. 4D Geodesics.
 ```
 TBA
 ```
-5. Co-registration and
+5. Co-registration and 4D mean estimation.
 ```
 TBA
 ```
@@ -62,4 +62,4 @@ TBA (We plan to release the Jupyter Notebook to run the entire neural framework.
 We showcase the quality of DSNS as heatmap visualization. Similarly, we also highlight spatiotemporal registration visualizations, which are enabled by default. After model training, the visualization will be shown.
 
 ## License
-This work is made available under the MIT license.
+This work is made available under the MIT [license](https://github.com/4D-DSNS/DSNS-code/blob/main/LICENSE).
