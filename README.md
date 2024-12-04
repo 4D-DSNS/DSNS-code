@@ -29,27 +29,29 @@ DSNS-code\_pretrained\
 DSNS-code\data\
 ```
 
-### Training
+### Training and Visualization
+
+We showcase the quality of DSNS as heatmap visualization. Similarly, we also highlight spatiotemporal registration visualizations, which are enabled by default. After model training, the visualization will be shown.
 
 1. Dynamic Spherical Neural Surfaces (D-SNS).
 ```
 python train_dsns.py
 ```
-2. For spatial registration we use Laga et al. codebase please follow the [link](https://github.com/hamidlaga/SRNF).
+2. For spatial registration we use Laga et al. codebase please follow the [link](https://github.com/hamidlaga/SRNF) to see more details. We have added the relevant files from Laga et al. codebase to ours (MATLAB code). 
 ```
-TBA
+spatial_registration.m
 ```
 3. Spatiotemporal registration.
 ```
 python train_time_warp.py
 ```
-4. 4D Geodesics.
+4. 4D Geodesics (MATLAB code).
 ```
-TBA
+geodesic.m
 ```
-5. Co-registration and 4D mean estimation.
+5. Co-registration and 4D mean estimation (MATLAB code).
 ```
-TBA
+coregistration_mean.m
 ```
 ### Notebook
 
@@ -57,9 +59,6 @@ TBA (We plan to release the Jupyter Notebook to run the entire neural framework.
 
 [//]: # (We also provide a demo notebook that shows the entire neural framework. Please note that the `Jupyter Notebook` uses the pretrained D-SNS model and showcases the entire framework. It assumes that the `DSNS-code\data` folder is present in the main directory.)
 
-### Visualization
-
-We showcase the quality of DSNS as heatmap visualization. Similarly, we also highlight spatiotemporal registration visualizations, which are enabled by default. After model training, the visualization will be shown.
 
 ## License
 This work is made available under the MIT [license](https://github.com/4D-DSNS/DSNS-code/blob/main/LICENSE).
